@@ -113,7 +113,7 @@ body {
   
   .project-description {
     color: #cfd2d6; /* Lighter text color for descriptions */
-    font-size: 1em; /* Increased font size for readability */
+    font-size: 1.3em; /* Increased font size for readability */
     margin-top: 10px; /* Space above the description */
   }
   
@@ -164,6 +164,7 @@ body {
     border: 5px solid #051416; /* Add a border with the site's accent color */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
     transition: transform 0.3s ease; /* Add a slight transform effect on hover */
+    margin-right: auto;
 }
 
   
@@ -180,6 +181,8 @@ body {
     color: #e4e6e8;
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 210px;
     width: 100%;
     max-width: 600px; /* Adjust as needed for the maximum width you prefer */
 
@@ -234,6 +237,8 @@ body {
     color: #e4e6e8;
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 210px;
     width: 100%;
     max-width: 600px; /* Adjust as needed for the maximum width you prefer */
 
@@ -287,4 +292,17 @@ body {
     max-width: none; /* Remove the max-width constraint */
   }
 
+}
+
+/* Adjust the grid layout for project items on wide screens */
+@media only screen and (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); /* Adjustable '250px' to your preferred minimum width */
+    justify-items: center; /* Center grid items horizontally */
+    padding: 0 10%; /* Adjust '10%' to increase or decrease the padding on the sides */
+  }
+
+  .project-item {
+    margin: 20px; /* This will ensure space between the grid items */
+  }
 }
