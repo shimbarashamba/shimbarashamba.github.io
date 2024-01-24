@@ -306,3 +306,29 @@ body {
     margin: 20px; /* This will ensure space between the grid items */
   }
 }
+
+/* CSS for smaller screens (e.g., MacBook Pro, tablets) */
+@media only screen and (max-width: 1023px) {
+  .about-me, .skills, .social-links {
+    /* Reset or reduce margins for smaller screens */
+    margin-right: 20px; /* Adjust this value to ensure the text is visible */
+    margin-left: 20px; /* Provide some space from the left edge */
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .content-container {
+    justify-content: center; /* This will center the flex items */
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi), 
+       only screen and (min-resolution: 2dppx) {
+  /* Styles for high-resolution screens */
+  .about-me, .skills, .social-links {
+    margin-left: 20px; /* Space from the left edge */
+    margin-right: 20px; /* Space from the right edge */
+  }
+}
