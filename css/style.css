@@ -184,7 +184,7 @@ body {
     margin-left: auto;
     margin-right: 210px;
     width: 100%;
-    max-width: 600px; /* Adjust as needed for the maximum width you prefer */
+    max-width: 600px; /* Adjust as needed for the maximum width */
 
   }
   
@@ -240,7 +240,7 @@ body {
     margin-left: auto;
     margin-right: 210px;
     width: 100%;
-    max-width: 600px; /* Adjust as needed for the maximum width you prefer */
+    max-width: 600px; /* Adjust as needed for the maximum width */
 
   }
   
@@ -297,7 +297,7 @@ body {
 /* Adjust the grid layout for project items on wide screens */
 @media only screen and (min-width: 1024px) {
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); /* Adjustable '250px' to your preferred minimum width */
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); /* Adjustable */
     justify-items: center; /* Center grid items horizontally */
     padding: 0 10%; /* Adjust '10%' to increase or decrease the padding on the sides */
   }
