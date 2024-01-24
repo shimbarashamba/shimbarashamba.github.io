@@ -267,9 +267,7 @@ body {
       font-size: 32px;
       padding: 20px 0;
   }
-  .header h1 {
-    font-size: 28px; /* Adjust the font size to make the name fit within the width */
-}
+ 
   /* Adjust the width of the boxes to fit the screen */
   .about-me, .skills, .social-links {
     width: 100%; /* Set the width to 100% to make them full-width */
