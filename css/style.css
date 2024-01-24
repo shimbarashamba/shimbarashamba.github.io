@@ -137,6 +137,11 @@ body {
     max-width: 100%;
   }
   
+  .left_column {
+    max-width: 50%; /* Adjust the percentage as needed for large screens */
+
+  }
+  
   .right-column {
     display: flex;
     align-items: center;
