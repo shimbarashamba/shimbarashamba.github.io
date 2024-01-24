@@ -146,6 +146,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 50%; /* Adjust the percentage as needed for large screens */
+
   }
   
 /* Styling for the profile picture */
