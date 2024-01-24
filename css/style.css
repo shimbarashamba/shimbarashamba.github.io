@@ -257,3 +257,16 @@ body {
     margin-top: 10px; /* Decreased margin from the top */
 
 }
+
+/* CSS for smaller screens (e.g., mobile phones) */
+@media only screen and (max-width: 600px) {
+  /* Adjusting the sections too wide for mobile */
+  .header {
+      font-size: 32px;
+      padding: 20px 0;
+  }
+  .about-me, .skills, .social-links {
+      margin: 10px;
+      padding: 10px;
+  }
+}
