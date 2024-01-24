@@ -1,0 +1,259 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark gradient background */
+    color: #e4e6e8;
+  }  
+
+/* Header Styles */
+.header {
+    font-family: 'Source Code Pro', monospace; /* Use the "Source Code Pro" font */
+    background: linear-gradient(45deg, #172c36, #203a43); /* Example dark gradient background */
+    padding: 40px 0; /* Increased padding for a larger header */
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px; /* Larger font size for the title */
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensures it appears above other content */
+    position: relative; /* Position relative to allow for background attachment */
+  }
+  
+  /* Background Image for Header */
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/banner.jpg'); /* Path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust the opacity */
+    z-index: -1;
+    /* Set background attachment to fixed so it stays when scrolling */
+    background-attachment: fixed;
+  }
+  
+  
+  /* Push content below the header */
+  .body-content {
+    margin-top: 100px; /* Adjust the margin to match the header height */
+  }
+  
+  /* Description in the banner */
+.description {
+    font-size: 36px !important;
+    max-width: 80%; /* Limit the maximum width */
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 20px; /* Adjust as needed */
+    color: #cfd2d6; /* Slightly muted text color for the description */
+
+}
+    
+  .section-title {
+    font-size: 36px !important;
+    font-family: 'Source Code Pro', monospace; /* Use the "Source Code Pro" font */
+    text-align: center;
+    color: #e4e6e8; /* Adjust the color as needed */
+    margin: 20px 0;
+    margin-top: 60px;
+    font-size: 1.5em; /* Increased font size */
+  }
+  
+
+/* Grid layout for projects with responsiveness */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Space between items */
+    padding: 20px;
+  }
+  
+  .project-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Optional: Rounded corners */
+    overflow: hidden; /* Keeps everything contained within the border-radius */
+  }
+  
+  .project-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Ensures text color is consistent */
+  }
+  
+  .project-image {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Height adjusts to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions for hover effects */
+  }
+  
+  .project-item:hover {
+    transform: scale(1.03); /* Slight scale up on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+  }
+  
+  .project-item:hover .project-image {
+    opacity: 0.9; /* Reduce opacity of the image on hover */
+  }
+  
+  .project-description {
+    color: #cfd2d6; /* Lighter text color for descriptions */
+    font-size: 1em; /* Increased font size for readability */
+    margin-top: 10px; /* Space above the description */
+  }
+  
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+/* Styling for the profile picture */
+.profile-container {
+    text-align: center; /* Center the profile picture horizontally */
+    margin-top: 90px; /* Adjust the top margin to move the picture lower */
+}
+
+.profile-pic {
+    max-width: 60%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 50%; /* Create a circular border */
+    border: 5px solid #051416; /* Add a border with the site's accent color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Add a slight transform effect on hover */
+}
+
+  
+  .profile-pic:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+  }
+  
+  .about-me, .skills {
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #e4e6e8;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .about-me h3, .skills h3 {
+    color: #e4e6e8;
+    margin-bottom: 15px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #e4e6e8;
+  }
+
+  .skills-list li:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #2a2d34; /* Change text color on hover */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .profile-pic {
+      width: 100%;
+    }
+  }
+  
+
+  .social-links {
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #e4e6e8;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .social-links h3 {
+    color: #e4e6e8;
+    margin-bottom: 15px;
+  }
+  
+  .links-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links-list li {
+    margin-bottom: 10px;
+    color: #e4e6e8;
+  }
+  
+  .links-list a {
+    text-decoration: none;
+    color: #e4e6e8; 
+    transition: color 0.3s ease;
+  }
+  
+  .links-list a:hover {
+    color: #2a2d34; /* Change text color on hover */
+  }
+  
+  /* Titles in the sections */
+.about-me h3, .skills h3, .social-links h3 {
+    font-family: 'Source Code Pro', monospace; /* Use the "Source Code Pro" font */
+    font-size: 30px; /* Increased font size */
+    margin-bottom: 15px; /* Adjusted margin to maintain spacing */
+    margin-top: 10px; /* Decreased margin from the top */
+
+}
