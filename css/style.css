@@ -134,6 +134,7 @@ body {
   .left-column, .right-column {
     flex: 1;
     padding: 20px;
+    max-width: 100%;
   }
   
   .right-column {
@@ -172,6 +173,8 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
+    max-width: 600px; /* Adjust as needed for the maximum width you prefer */
+
   }
   
   .about-me h3, .skills h3 {
@@ -224,6 +227,8 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
+    max-width: 600px; /* Adjust as needed for the maximum width you prefer */
+
   }
   
   .social-links h3 {
@@ -275,4 +280,3 @@ body {
   }
 
 }
-
