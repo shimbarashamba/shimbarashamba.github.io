@@ -14,6 +14,10 @@ body {
     max-width: 100%; /* Ensure content does not exceed viewport width */
   }  
 
+.wrapper {
+  overflow: hidden;
+}
+
 /* Header Styles */
 .header {
     font-family: 'Source Code Pro', monospace; /* Use the "Source Code Pro" font */
@@ -55,7 +59,7 @@ body {
   
   /* Description in the banner */
 .description {
-    font-size: 36px !important;
+    font-size: 36px;
     max-width: 80%; /* Limit the maximum width */
     margin: 0 auto; /* Center horizontally */
     margin-bottom: 20px; /* Adjust as needed */
@@ -64,13 +68,12 @@ body {
 }
     
   .section-title {
-    font-size: 36px !important;
     font-family: 'Source Code Pro', monospace; /* Use the "Source Code Pro" font */
     text-align: center;
     color: #e4e6e8; /* Adjust the color as needed */
     margin: 20px 0;
     margin-top: 60px;
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.8vw; /* Increased font size */
   }
   
 
@@ -134,7 +137,6 @@ body {
   .left-column, .right-column {
     flex: 1;
     padding: 20px;
-    max-width: 100%;
   }
   
   .left_column {
@@ -147,6 +149,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-grow: 1; /* Allow the right column to grow to fill available space */
+    margin-right: 150vw;
 
 
   }
@@ -155,9 +158,11 @@ body {
 .profile-container {
     text-align: center; /* Center the profile picture horizontally */
     margin-top: 90px; /* Adjust the top margin to move the picture lower */
+    
 }
 
 .profile-pic {
+    width: 40vw;
     max-width: 60%; /* Ensure the image is responsive */
     height: auto;
     border-radius: 50%; /* Create a circular border */
@@ -165,6 +170,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
     transition: transform 0.3s ease; /* Add a slight transform effect on hover */
     margin-right: auto;
+    margin-left: auto;
 }
 
   
@@ -182,12 +188,12 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     margin-left: auto;
-    margin-right: 210px;
+    margin-right: auto;
     width: 100%;
-    max-width: 600px; /* Adjust as needed for the maximum width */
 
   }
-  
+
+
   .about-me h3, .skills h3 {
     color: #e4e6e8;
     margin-bottom: 15px;
@@ -204,6 +210,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     color: #e4e6e8;
+    width: auto;
   }
 
   .skills-list li:hover {
@@ -215,6 +222,10 @@ body {
   @media only screen and (max-width: 600px) {
     .content-container {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      margin-right: 13vw;
     }
   
     .left-column, .right-column {
@@ -238,9 +249,8 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     margin-left: auto;
-    margin-right: 210px;
+    margin-right: auto;
     width: 100%;
-    max-width: 600px; /* Adjust as needed for the maximum width */
 
   }
   
@@ -282,31 +292,70 @@ body {
 @media only screen and (max-width: 600px) {
   /* Adjusting the sections too wide for mobile */
   .header {
-      font-size: 32px;
+      font-size: 3vw;
       padding: 20px 0;
+  }
+
+  .description {
+    font-size: 3vw;
   }
  
   /* Adjust the width of the boxes to fit the screen */
   .about-me, .skills, .social-links {
     width: 100%; /* Set the width to 100% to make them full-width */
     max-width: none; /* Remove the max-width constraint */
+    font-size: 4vw;
+  }
+  .section-title {
+    font-size: 5vw;
   }
 
 }
 
+
 /* Adjust the grid layout for project items on wide screens */
 @media only screen and (min-width: 1024px) {
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); /* Adjustable */
     justify-items: center; /* Center grid items horizontally */
     padding: 0 10%; /* Adjust '10%' to increase or decrease the padding on the sides */
+    font-size: 1vw;
   }
 
   .project-item {
     margin: 20px; /* This will ensure space between the grid items */
   }
-}
+  .about-me {
+    width: 32vw;
+    height: 16vw;
+    font-size: 1.1vw;
+  }
 
+  .skills {
+    width: 32vw;
+    height: auto;
+    font-size: 1.15vw;
+    max-height: none;
+  }
+
+  .skills-list {
+    width: auto;
+    
+  }
+
+  .social-links {
+    width: 32vw;
+    height: 12vw;
+    font-size: 1.1vw;
+    line-height: 2vw;
+  }
+  
+  .links-list {
+    font-size: 1.4vw;
+  }
+  .about-me h3, .skills h3, .social-links h3 {
+    font-size: 1.5vw;
+  }
+}
 /* CSS for smaller screens (e.g., MacBook Pro, tablets) */
 @media only screen and (max-width: 1023px) {
   .about-me, .skills, .social-links {
@@ -320,6 +369,9 @@ body {
   .content-container {
     justify-content: center; /* This will center the flex items */
   }
+  .section-title {
+    font-size: 5vw;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), 
@@ -330,5 +382,26 @@ body {
   .about-me, .skills, .social-links {
     margin-left: 20px; /* Space from the left edge */
     margin-right: 20px; /* Space from the right edge */
+    font-size: 1.3vw;
+    width: 40vw;
   }
+
+  .about-me h3, .skills h3, .social-links h3 {
+    font-size: 1.6vw;
+  }
+
+  
 }
+
+
+@media only screen and (min-width: 1921px) {
+
+  .description {
+  
+      font-size: 2vw;
+  
+    }
+  
+
+  
+  }
