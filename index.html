@@ -1,111 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axel Abrahamsson Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Axel Abrahamsson Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class = "wrapper">
-    
-  
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="#">Axel Abrahamsson</a></h1>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
 
-<div class="header">
-  <h1>Axel Abrahamsson</h1>
-  <h2>Data Analyst</h2>
-  <p class="description">Experienced in Advanced Analytics with Python, SQL & more. Transforming Complex Data into Actionable Insights.</p>
-</div>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Header Content -->
+        <div class="header-content">
+            <h2>Data Analyst</h2>
+            <p class="description"></p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
 
-<h3 class="section-title">Personal Projects:</h3>
+    <!-- Main Content Wrapper -->
+    <main class="wrapper">
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h3 class="section-title">Some personal projects I have done</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="projects-carousel">
+                    <!-- Project Items -->
+                    <div class="project-item">
+                        <a href="https://github.com/shimbarashamba/landscape-image-recognition" target="_blank">
+                            <img src="assets/landscape.png" alt="Landscape Image Recognition" class="project-image">
+                            <div class="project-info">
+                                <h4>Landscape Image Recognition</h4>
+                                <p>TensorFlow for image recognition of different landscapes.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Repeat for other projects -->
+                    <div class="project-item">
+                        <a href="https://github.com/shimbarashamba/Predicting-Crab-Age-Supervised-ML" target="_blank">
+                            <img src="assets/crab.png" alt="Predicting Crab Age" class="project-image">
+                            <div class="project-info">
+                                <h4>Predicting Crab Age</h4>
+                                <p>Supervised Machine Learning to predict crab age.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/shimbarashamba/NYC-Taxi-Unsupervised-Machine-Learning" target="_blank">
+                            <img src="assets/taxi.png" alt="NYC Taxi Analysis" class="project-image">
+                            <div class="project-info">
+                                <h4>NYC Taxi Analysis</h4>
+                                <p>K-means clustering to find patterns in a large dataset.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/shimbarashamba/Book-Reviews-Visualization" target="_blank">
+                            <img src="assets/book.png" alt="Book Reviews Visualization" class="project-image">
+                            <div class="project-info">
+                                <h4>Book Reviews Visualization</h4>
+                                <p>Analysis and visualization of Amazon book reviews.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/shimbarashamba/TurtlePong" target="_blank">
+                            <img src="assets/pong.png" alt="Turtle Pong" class="project-image">
+                            <div class="project-info">
+                                <h4>Turtle Pong</h4>
+                                <p>Pong clone for two players.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Add more project items as needed -->
+                  </div>
+                  <button class="carousel-btn right-btn"><i class="fas fa-chevron-right"></i></button>
+              </div>
+          </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h3 class="section-title">I also develop video games as a hobby</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="projects-carousel">
+                    <!-- Project Items -->
+                    <div class="project-item">
+                        <a href="https://stereum.itch.io/orb-hunter" target="_blank">
+                            <img src="assets/orbhunterpic3.png" alt="Orb Hunter" class="project-image">
+                            <div class="project-info">
+                                <h4>Orb Hunter</h4>
+                                <p>An exciting 2D platformer. Traverse the levels, fight enemies and collect the orbs
+                                    before you face the final boss!
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Repeat for other projects -->
+                    <div class="project-item">
+                        <a href="https://stereum.itch.io/slippery-sloop" target="_blank">
+                            <img src="assets/boatpic1.png" alt="Slippery Sloop" class="project-image">
+                            <div class="project-info">
+                                <h4>Slippery Sloop</h4>
+                                <p>Control the Slippery Sloop as you take on the navy. Playable in browser.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://stereum.itch.io/lap-frenzy" target="_blank">
+                            <img src="assets/carpic.png" alt="Lap Frenzy" class="project-image">
+                            <div class="project-info">
+                                <h4>Lap Frenzy</h4>
+                                <p>Race around the track as fast as you can, beat your highscore again and again. Playable in browser.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-btn right-btn"><i class="fas fa-chevron-right"></i></button>
+              </div>
+          </section>
 
 
-<div class="projects">
-    <div class="project-item">
-        <a href="https://github.com/shimbarashamba/landscape-image-recognition" target="_blank">
-          <img src="assets/landscape.png" alt="Landscape Project Thumbnail" class="project-image">
-          <p class="project-description">TensorFlow for image recognition of different landscapes.</p>
-        </a>
-    </div>
-    <div class="project-item">
-      <a href="https://github.com/shimbarashamba/Predicting-Crab-Age-Supervised-ML" target="_blank">
-        <img src="assets/crab.png" alt="Crab Project Thumbnail" class="project-image">
-        <p class="project-description">Supervised Machine Learning to predict crab age.</p>
-      </a>
-    </div>
-    <div class="project-item">
-        <a href="https://github.com/shimbarashamba/NYC-Taxi-Unsupervised-Machine-Learning" target="_blank">
-          <img src="assets/taxi.png" alt="Taxi Project Thumbnail" class="project-image">
-          <p class="project-description">K-means clustering to find patterns in a large dataset.</p>
-        </a>
-      </div>
-    <div class="project-item">
-        <a href="https://github.com/shimbarashamba/Book-Reviews-Visualization" target="_blank">
-          <img src="assets/book.png" alt="Book Project Thumbnail" class="project-image">
-          <p class="project-description">Analysis and visualization of Amazon book reviews.</p>
-        </a>
-      </div>
-    <div class="project-item">
-        <a href="https://github.com/shimbarashamba/TurtlePong" target="_blank">
-          <img src="assets/pong.png" alt="Pong Project Thumbnail" class="project-image">
-          <p class="project-description">Pong clone for two players.</p>
-        </a>
-      </div>
-    <!-- Repeat for future projects -->
-  </div>
-  
-  
-<!-- About Me and Skills Section -->
-<!-- Two-column layout container -->
-<div class="content-container">
-    <!-- Left column for About Me and Skills -->
-    <div class="left-column">
-      <!-- About Me -->
-      <div class="about-me">
-        <h3>About Me</h3>
-        <p>I hold a bachelor's degree in Computer and Systems Sciences from
-            Stockholm University. After graduating, while practicing my coding skills,
-            I got very interested in Data Analytics and Data Science. This lead to me participating in the NOD Coding Bootcamp,
-            where I learned how to use Python, SQL, and Machine Learning for analysis purposes.
-            I now want to use my skills to bring value to your organization.
-        </p>
-      </div>
-      
-      <!-- Social Links and Contact -->
-      <div class="social-links">
-        <h3>Social Links and Contact</h3>
-        <ul class="links-list">
-          <li><a href="https://www.linkedin.com/in/axelabrahamsson" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/shimbarashamba" target="_blank">GitHub</a></li>
-          <li><a href="mailto:axelabrahamsson99@gmail.com">axelabrahamsson99@gmail.com</a></li>
-        </ul>
-      </div>
-  
-      <!-- Skills -->
-      <div class="skills">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Pandas</li>
-          <li>Scikit-Learn</li>
-          <li>Power BI</li>
-          <li>Tableau</li>
-          <li>Matplotlib</li> 
-          <li>Numpy</li>
-          <li>Seaborn</li>
-          <li>TensorFlow</li> 
-          <li>Java</li>
-        </ul>
-      </div>
-    </div>
-  
-    <!-- Right column for the image -->
-    <div class="profile-container">
-        <img src="assets/me.png" alt="Picture of me" class="profile-pic">
-    </div>
-    
+        <!-- About Me and Skills Section -->
+        <section id="about" class="about-skills-section">
+            <div class="content-container">
+                <!-- Profile Picture -->
+                <div class="profile-container">
+                    <img src="assets/me.png" alt="Picture of Axel Abrahamsson" class="profile-pic">
+                </div>
+                <!-- About Me and Skills -->
+                <div class="about-skills">
+                    <!-- About Me -->
+                    <div class="about-me">
+                        <h3>About Me</h3>
+                        <p>
+                            Hello! I am a data analyst who works with SQL, Python, Tableau, and spreadsheets to help teams understand and use their data. I build dashboards, track KPIs, support and debug data pipelines (Snowflake, dbt), and automate tasks with Python. My focus is on making sure the right data is available, accurate, and easy to work with.
+                            <br>
+                            <br>
+                            One of my hobbies is developing video games. You can check them out above!
 
-</div>
-</body>
-</html>
+                        </p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>SQL</li>
+                            <li>Tableau</li>
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Snowflake</li>
+                            <li>dbt</li>
+                            <li>Excel & Google Sheets</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h3 class="section-title">Get in Touch</h3>
+            <div class="contact-container">
+                <div class="social-links">
+                    <ul class="links-list">
+                        <li><a href="https://www.linkedin.com/in/axelabrahamsson" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/shimbarashamba" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="mailto:axelabrahamsson99@gmail.com"><i class="fas fa-envelope"></i> Email Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+          <p>&copy; 2023 Axel Abrahamsson</p>
+      </footer>
+  
+      <!-- JavaScript for Interactive Elements -->
+      <script src="js/app.js"></script>
+  </body>
+  </html>
